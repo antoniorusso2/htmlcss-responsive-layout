@@ -8,6 +8,7 @@ reset rules
   }
 
 img{
+  display: block;
 max-width: 100%;
 }
 
@@ -51,14 +52,9 @@ h1{
   margin-top: 20px;
 }
 .container{
+  width: 1500px;
   margin: 0 auto;
   padding: 50px 25px;
-}
-.w-100{
-  width: 100%;
-}
-.w-80{
-  width: 80%;
 }
 .row{
   display: flex;
@@ -68,6 +64,9 @@ h1{
 /* 
 col width and general rules
 */
+.col{
+  padding: 0 25px;
+}
 .col.w-60{
   max-width: 60%;
 }
@@ -87,7 +86,7 @@ navbar style
   
 }
 
-.logo-title{
+.logo{
   font-size: 40px;
   color: var(--logo-color);
   text-transform: uppercase;
@@ -105,7 +104,7 @@ main section
 }
 
 .main-title{
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 800;
   color: var(--title-color);
 }
@@ -113,6 +112,28 @@ main section
 /*
 card
 */
+.card-header{
+  margin-bottom: 40px;
+}
 .card-body{
   display: flex;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px var(--text-grey);
+}
+
+.card-body .embed-video{
+  max-width: 60%;
+}
+.recipe-details{
+  padding: 20px 40px;
+}
+.recipe-details h2{
+  font-size: 24px;
+}
+.recipe-details ul>li{
+  font-size: 14px;
+  margin-top: 10px;
+}
+.recipe-details ul{
+  padding: 20px 0;
 }
