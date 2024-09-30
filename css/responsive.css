@@ -2,19 +2,71 @@
 desktop
 */
 @media screen and (min-width: 992px){
- 
+ .container{
+  max-width: 100%;
+ }
 }
 /* 
 tablet
 */
 @media screen and (max-width: 991.99px){
+ .container{
+  width: 100%;
+ }
+ .col-60{
+  max-width: 100%;
+ }
+ .card-body{
+  display: flex;
+  flex-direction: column;
+ }
+ .card-body .embed-video{
+  max-width: 100%;
+  flex-direction: column;
+ }
+ .recipe-details ul{
+  display: flex;
+  flex-wrap: wrap;
+ }
+ .recipe-details ul>li{
+  width: calc(100%/3);
+  margin: 20px 0px;
+ }
+ .row.socials{
+  flex-wrap: nowrap;
+ }
+ .social-icon{
+  max-width: 80%;
+ }
  
 }
 /*
 Smartphone
 */
 @media screen and (max-width: 767.99px){
+  /* 
+  hero section with video - social - banner(hidden)
+  */
  .logo--container{
   text-align: center;
+ }
+ .additional-info{
+  display: none;
+ }
+ .main-title{
+  font-size: 2rem;
+ }
+ .banner{
+  display: none;
+ }
+
+ .row.socials{
+  justify-content: space-between;
+ }
+ .icon-wrap{
+  max-width: 100px;
+ }
+ .recipe-details ul{
+  display: block;
  }
 }
