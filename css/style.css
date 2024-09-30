@@ -1,3 +1,6 @@
+/* 
+reset rules
+*/
 *{
   box-sizing: border-box;
   margin: 0;
@@ -12,35 +15,68 @@ a{
   text-decoration: none;
   color: currentColor;
 }
+ul{
+  list-style: none;
+}
+
+html{
+  font-family: "Montserrat", system-ui;
+}
 /* 
 custom properties
 */
-:root{
---logo-color: #ff9614;
+:root{ 
+  --text-grey: #b19999;
+  --logo-color: #ff9614;
+  --title-color: #493969;
 }
 
 /* 
 font -- Nerko -- navbar logo
 */
-.logo-title{
-font-size: 36px;
-color: var(--logo-color);
-text-transform: uppercase;
-font-family:"Nerko One", cursive;
-}
 .nerko-one-regular {
 font-family: "Nerko One", cursive;
 font-weight: 400;
 font-style: normal;
 }
+.row{
+  /* display: flex; */
+}
 
 /* 
 general rules
 */
-
+section{
+  padding: 25px 0;
+  
+}
+h1{
+  margin-top: 20px;
+}
 .container{
   margin: 0 auto;
+  padding: 50px 25px;
 }
+.w-100{
+  width: 100%;
+}
+.w-80{
+  width: 80%;
+}
+
+/* 
+col width and general rules
+*/
+.col-60{
+  max-width: 60%;
+}
+.col-100{
+  padding: 25px 0;
+}
+/*
+container recipe section
+*/
+
 
 /* 
 navbar style
@@ -48,4 +84,27 @@ navbar style
 .logo--container{
   padding: 0.5em 1em;
   
+}
+
+.logo-title{
+  font-size: 40px;
+  color: var(--logo-color);
+  text-transform: uppercase;
+  font-family:"Nerko One", cursive;
+  text-shadow: 1px 1px 2px var(--text-grey);
+}
+
+/* 
+main section
+*/
+.recipe-type{
+  color: var(--text-grey) ;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.main-title{
+  font-size: 40px;
+  font-weight: 800;
+  color: var(--title-color);
 }
