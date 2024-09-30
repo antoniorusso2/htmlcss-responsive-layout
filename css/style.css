@@ -50,10 +50,7 @@ font-style: normal;
 /* 
 general rules
 */
-section{
-  padding: 25px 0;
-  
-}
+
 h1{
   margin-top: 1rem;
 }
@@ -64,7 +61,7 @@ h1{
 .row{
   display: flex;
   flex-wrap: wrap;
-  padding: 25px 25px;
+  padding: 1rem 2rem;
 }
 .row.socials{
  flex-wrap: nowrap;
@@ -76,10 +73,9 @@ h1{
 !box-shadows
 */
 .card-body,
-.social-icon {
+.icon-wrap{
   box-shadow: 1px 1px 5px var(--text-grey);
 }
-
 /* 
 col width and general rules
 */
@@ -158,17 +154,15 @@ card
 /* 
 embed video
 */
-.embed-video img{
-  aspect-ratio: 2/1
-}
 /* 
-social links settings
+social buttons settings
 */
-.social-icon{
-  text-align: center;
-  font-size: 30px;
-  line-height: 60px;
+.icon-wrap{
   border-radius: 999px;
+}
+.social-icon{
+  font-size: 1rem;
+  text-align: center;
   padding: 10px 0;
 }
 .fa-facebook{
@@ -191,4 +185,25 @@ banner
 */
 .col-100.banner{
   width: 100%;
+}
+
+/* 
+story section
+*/
+.story img{
+  max-width: 380px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.recipe-story.title{
+  font-size: 20px;
+}
+.recipe-story.title::after{
+  content: '';
+  display: block;
+  border-bottom: 2px solid #f7972e;
+  width: 50px;
+  height: 1px;
+  margin: 20px 0;
 }

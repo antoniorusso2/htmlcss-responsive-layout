@@ -35,8 +35,8 @@ tablet
  .row.socials{
   flex-wrap: nowrap;
  }
- .social-icon{
-  max-width: 80%;
+ .social-name{
+  display: none;
  }
  
 }
@@ -56,7 +56,7 @@ Smartphone
  .main-title{
   font-size: 2rem;
  }
- .banner{
+ .banner-hidden{
   display: none;
  }
 
@@ -65,6 +65,14 @@ Smartphone
  }
  .icon-wrap{
   max-width: 100px;
+ }
+ .social-icon{
+  padding: 1.3rem;
+  max-width: 100%;
+ }
+
+ .col.w-20.icon-wrap{
+  width: auto;
  }
  .recipe-details ul{
   display: block;
