@@ -38,6 +38,19 @@ tablet
  .social-name{
   display: none;
  }
+
+ /* 
+ footer 
+ */
+ .footer-content{
+  flex-direction: column;
+ }
+ .footer-content>*{
+  text-align: center;
+  padding: 0.5rem 1rem;
+  font-size: 0.7rem;
+  color: white;
+}
  
 }
 /*

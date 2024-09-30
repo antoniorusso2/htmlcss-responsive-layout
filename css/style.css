@@ -5,8 +5,11 @@ reset rules
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  }
 
+}
+html{
+  font-family: "Montserrat", system-ui;
+}
 img{
   display: block;
   width: 100%;
@@ -21,9 +24,7 @@ ul{
   list-style: none;
 }
 
-html{
-  font-family: "Montserrat", system-ui;
-}
+
 /* 
 custom properties
 */
@@ -36,6 +37,7 @@ custom properties
   --text-grey: #b19999;
   --logo-color: #ff9614;
   --title-color: #493969;
+  --footer-color: #7C69A4;
 }
 
 /* 
@@ -50,7 +52,9 @@ font-style: normal;
 /* 
 general rules
 */
-
+main{
+  margin-bottom: 50px;
+}
 h1{
   margin-top: 1rem;
 }
@@ -79,7 +83,9 @@ h1{
 /* 
 col width and general rules
 */
-
+.col.w-33{
+  width: calc(100%/3);
+}
 .col.w-60{
   width: 60%;
 }
@@ -99,7 +105,6 @@ navbar style
 */
 .logo--container{
   padding: 0.5em 1em;
-  
 }
 
 .logo{
@@ -206,4 +211,30 @@ story section
   width: 50px;
   height: 1px;
   margin: 20px 0;
+}
+
+/* 
+footer
+*/
+.footer-content{
+  max-width: 100%;
+  background-color: var(--footer-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content>ul{
+  display: flex;
+}
+.footer-content>*{
+  padding: 2rem 1rem;
+  font-size: 0.7rem;
+  color: white;
+}
+.footer-content .copyright{
+  margin-bottom: 5px;
+}
+.footer-content>ul li{
+  margin: 0px 5px;
 }
