@@ -1,12 +1,35 @@
-/* 
-reset rules
- */
- *{
+*{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- }
+  }
 
- img{
-  max-width: 100%;
- }
+img{
+max-width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: currentColor;
+}
+/* 
+custom properties
+*/
+:root{
+--logo-color: #ff9614;
+}
+
+/* 
+font -- Nerko -- navbar logo
+*/
+.logo-title{
+  font-size: 32px;
+color: var(--logo-color);
+text-transform: uppercase;
+font-family:"Nerko One", cursive;
+}
+.nerko-one-regular {
+font-family: "Nerko One", cursive;
+font-weight: 400;
+font-style: normal;
+}
