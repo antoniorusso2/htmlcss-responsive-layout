@@ -9,10 +9,11 @@ reset rules
 
 img{
   display: block;
-max-width: 100%;
+  width: 100%;
 }
 
 a{
+  display: inline-block;
   text-decoration: none;
   color: currentColor;
 }
@@ -27,6 +28,11 @@ html{
 custom properties
 */
 :root{ 
+  --facebook-color: #1A77F3;
+  --twitter-color: #009EFF;
+  --instagram-color: #E884A9;
+  --pinterest-color: #E62525;
+  --youtube-color: #E62222;
   --text-grey: #b19999;
   --logo-color: #ff9614;
   --title-color: #493969;
@@ -59,19 +65,32 @@ h1{
 .row{
   display: flex;
   flex-wrap: wrap;
+  padding: 25px 25px;
+}
+.row.socials{
+ justify-content: space-between;
+}
+
+/* 
+!box-shadows
+*/
+.card-body,
+.social-icon {
+  box-shadow: 1px 1px 5px var(--text-grey);
 }
 
 /* 
 col width and general rules
 */
-.col{
-  padding: 0 25px;
-}
+
 .col.w-60{
   max-width: 60%;
 }
 .col.w-100{
-  padding: 25px 0;
+  max-width: 100%;
+}
+.col.w-20{
+  max-width: 20%;
 }
 /*
 container recipe section
@@ -118,9 +137,7 @@ card
 .card-body{
   display: flex;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px var(--text-grey);
 }
-
 .card-body .embed-video{
   max-width: 60%;
 }
@@ -136,4 +153,35 @@ card
 }
 .recipe-details ul{
   padding: 20px 0;
+}
+/* 
+embed video
+*/
+.embed-video img{
+  aspect-ratio: 2/1
+}
+/* 
+social links settings
+*/
+.social-icon{
+  padding: 0 4em;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+  border-radius: 999px;
+}
+.fa-facebook{
+  color: var(--facebook-color);
+}
+.fa-twitter{
+  color: var(--twitter-color);
+}
+.fa-instagram{
+  color: var(--instagram-color);
+}
+.fa-pinterest{
+  color: var(--pinterest-color);
+}
+.fa-youtube{
+  color: var(--youtube-color);
 }
