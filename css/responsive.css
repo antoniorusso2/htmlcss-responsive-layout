@@ -40,6 +40,12 @@ tablet
  }
 
  /* 
+ video thumbnail
+ */
+ .video-wrap{
+  width: 100%;
+ }
+ /* 
  footer 
  */
  .footer-content{
@@ -89,5 +95,10 @@ Smartphone
  }
  .recipe-details ul{
   display: block;
+ }
+ .clear{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
  }
 }
